@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Home
+{% endblock title%}
+
+{% block container %}
+
+        <!-- Hero/Intro Slider Start -->
+        <div class="section ">
+            <div class="hero-slider swiper-container slider-nav-style-1 slider-dot-style-1">
+                <!-- Hero slider Active -->
+                <div class="swiper-wrapper">
+                    <!-- Single slider item -->
+                    <div class="hero-slide-item slider-height swiper-slide bg-color1" data-bg-image="{% static '/images/hero/bg/hero-bg-1.jpg' %}">
+                        <div class="container h-100">
+                            <div class="row h-100">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 align-self-center sm-center-view">
+                                    <div class="hero-slide-content slider-animated-1">
+                                        <span class="category">Добро пожаловать в Hmart</span>
+                                        <h2 class="title-1">Ваш Дом<br>
+                                        Смарт девайсы & <br>
+                                        Лучшее решение </h2>
+                                        <a href="shop-left-sidebar.html" class="btn btn-primary text-capitalize">Посмотреть все товары</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single slider item -->
+                    <div class="hero-slide-item slider-height swiper-slide bg-color1" data-bg-image="{% static '/images/hero/bg/hero-bg-2.jpg' %}">
+                        <div class="container h-100">
+                            <div class="row h-100">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 align-self-center sm-center-view">
+                                    <div class="hero-slide-content slider-animated-1">
+                                        <span class="category">Добро пожаловать в Hmart</span>
+                                        <h2 class="title-1">Ваш Дом<br>
+                                        Смарт девайсы & <br>
+                                        Лучшее решение </h2>
+                                        <a href="shop-left-sidebar.html" class="btn btn-primary text-capitalize">Посмотреть все товары</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-buttons">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero/Intro Slider End -->
+
+        <!-- Product Area Start -->
+        <div class="product-area pb-100px">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="tab-content mt-60px">
+                            <!-- 1st tab start -->
+                            <div class="tab-pane fade show active" id="newarrivals">
+                                <div class="row mb-n-30px">
+                                    <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                        <!-- Single Prodect -->
+                                        <div class="product">
+                                            <span class="badges">
+                                                <span class="new">New</span>
+                                            </span>
+                                            <div class="thumb">
+                                                <a href="single-product.html" class="image">
+                                                    <img src="{% static '/images/product-image/1.webp' %}" alt="Product" />
+                                                    <img class="hover-image" src={% static '/images/product-image/1.webp' %} alt="Product" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <span class="category"><a href="#">Accessories</a></span>
+                                                <h5 class="title"><a href="single-product.html">Modern Smart Phone
+                                                    </a>
+                                                </h5>
+                                                <span class="price">
+                                                    <span class="new">$38.50</span>
+                                                </span>
+                                            </div>
+                                            <div class="actions">
+                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                                <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
+                                                        class="pe-7s-like"></i></button>
+                                                <button class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                                <button class="action compare" title="Compare" data-bs-toggle="modal" data-bs-target="#exampleModal-Compare"><i
+                                                        class="pe-7s-refresh-2"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+
+
+
+                                </div>
+                            </div>
+                            <!-- 1st tab end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product Area End -->
+        <!-- Fashion Area Start -->
+        <div class="fashion-area" data-bg-image="{% static '/images/fashion/fashion-bg.jpg' %} ">
+            <div class="container h-100">
+                <div class="row justify-content-center align-items-center h-100">
+                    <div class="col-12 text-center">
+                        <h2 class="title"> <span>Умная мода</span> С помощью интеллектуальных устройств </h2>
+                        <a href="shop-left-sidebar.html" class="btn btn-primary text-capitalize m-auto">Посмотреть все товары</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fashion Area End -->
+
+
+        <!-- Brand area start -->
+        <div class="brand-area pt-100px pb-100px">
+            <div class="container">
+                <div class="brand-slider swiper-container">
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide brand-slider-item text-center">
+                            <a href="#"><img class=" img-fluid" src="{% static '/images/partner/1.png' %}" alt="" /></a>
+                        </div>
+                        <div class="swiper-slide brand-slider-item text-center">
+                            <a href="#"><img class=" img-fluid" src="{% static '/images/partner/2.png' %}" alt="" /></a>
+                        </div>
+                        <div class="swiper-slide brand-slider-item text-center">
+                            <a href="#"><img class=" img-fluid" src="{% static '/images/partner/3.png' %} " alt="" /></a>
+                        </div>
+                        <div class="swiper-slide brand-slider-item text-center">
+                            <a href="#"><img class=" img-fluid" src="{% static '/images/partner/4.png' %} " alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Brand area end -->
+
+
+{% endblock container %}
